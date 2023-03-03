@@ -7,6 +7,25 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas Background="#FFFFD2D2">
+        <RichTextBox Height="336" Width="388" Canvas.Left="364" Canvas.Top="49" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="runDisplay"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Canvas Height="336" Width="190" Canvas.Left="23" Canvas.Top="39" Background="#FF692222" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Label Content="First Name" Canvas.Left="28" Canvas.Top="33"/>
+            <TextBox x:Name="txtFirstName" Canvas.Left="35" TextWrapping="Wrap" Canvas.Top="64" Width="120"/>
+            <Label Content="Last Name" Canvas.Left="28" Canvas.Top="87" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtLastName" Canvas.Left="35" TextWrapping="Wrap" Canvas.Top="118" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="Grade" Canvas.Left="28" Canvas.Top="144" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtGrade" Canvas.Left="35" TextWrapping="Wrap" Canvas.Top="175" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button x:Name="btnCreate" Content="Create / Open" Canvas.Left="28" Canvas.Top="221" HorizontalAlignment="Left" VerticalAlignment="Center" Width="137" Click="btnCreate_Click"/>
+            <Button x:Name="btnAppend" Content="Append" Canvas.Left="28" Canvas.Top="270" Width="137" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnAppend_Click"/>
+        </Canvas>
+        <Button x:Name="btnSaveGameSystems" Content="Save Video Game Systems" Canvas.Left="42" Canvas.Top="391" HorizontalAlignment="Left" VerticalAlignment="Top" Width="152" Click="btnSaveGameSystems_Click"/>
+        <Button x:Name="btnLoadGameSystems" Content="Load Game Systems" Canvas.Left="492" Canvas.Top="396" Width="152" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnLoadGameSystems_Click"/>
 
     </Canvas>
 </Window>
