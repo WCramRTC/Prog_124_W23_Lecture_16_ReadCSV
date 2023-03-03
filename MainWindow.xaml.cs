@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Prog_124_W23_Lecture_16_ReadCSV.Example;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace Prog_124_W23_Lecture_16_ReadCSV
         public MainWindow()
         {
             InitializeComponent();
+            new Notes().Show();
         }
     }
 }
